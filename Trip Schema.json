@@ -1,0 +1,654 @@
+[
+    {
+        "key": "group_5c4898832d1a5",
+        "title": "Trip Schema",
+        "fields": [
+            {
+                "key": "field_5c4898a98926c",
+                "label": "Trip Schema",
+                "name": "trip_schema",
+                "type": "repeater",
+                "instructions": "Use this repeater to add trip schema to this page. All fields are required",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5c4898d08926d",
+                "min": "",
+                "max": "",
+                "layout": "row",
+                "button_label": "Add Trip",
+                "sub_fields": [
+                    {
+                        "key": "field_5c4898d08926d",
+                        "label": "Name",
+                        "name": "trip_name",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Clear Creek Beginner Rafting Trip",
+                        "placeholder": "Clear Creek Beginner Rafting Trip",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4899338926e",
+                        "label": "Description",
+                        "name": "trip_description",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "A Clear Creek Beginner river rafting trip is the perfect adventure for the entire family! This trip offers up plenty of whitewater rapids, beautiful scenery and some peaceful float water. You\u2019ll have a blast splashing through Class II-III rapids where we\u2019ll help you develop your paddling skills. Relax as you meander through the historic mining town of Idaho Springs past the Argo Gold Mine and Charlie Taylor waterwheel. Keep an eye out for wildlife in the canyons surrounding you as you enjoy your Colorado adventure. This is a fabulous trip for first timers, families and large groups with varying ability levels.",
+                        "placeholder": "A Clear Creek Beginner river rafting trip is the perfect adventure for the entire family! This trip offers up plenty of whitewater rapids, beautiful scenery and some peaceful float water. You\u2019ll have a blast splashing through Class II-III rapids where we\u2019ll help you develop your paddling skills. Relax as you meander through the historic mining town of Idaho Springs past the Argo Gold Mine and Charlie Taylor waterwheel. Keep an eye out for wildlife in the canyons surrounding you as you enjoy your Colorado adventure. This is a fabulous trip for first timers, families and large groups with varying ability levels.",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4899c18926f",
+                        "label": "City",
+                        "name": "trip_city",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Idaho Springs",
+                        "placeholder": "Idaho Springs",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4899f689270",
+                        "label": "Trip City Description",
+                        "name": "trip_city_description",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "The City of Idaho Springs is a Statutory City in the western United States, the most populous municipality in Clear Creek County, Colorado.",
+                        "placeholder": "The City of Idaho Springs is a Statutory City in the western United States, the most populous municipality in Clear Creek County, Colorado.",
+                        "maxlength": "",
+                        "rows": 4,
+                        "new_lines": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c489aa289271",
+                        "label": "Trip City URL",
+                        "name": "trip_city_url",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "https:\/\/en.wikipedia.org\/wiki\/Idaho_Springs,_Colorado",
+                        "placeholder": "https:\/\/en.wikipedia.org\/wiki\/Idaho_Springs,_Colorado",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c48fea09518e",
+                        "label": "Additional Itinerary",
+                        "name": "trip_additional_itinerary",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": "",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0
+                    },
+                    {
+                        "key": "field_5c48ff3d0281a",
+                        "label": "Additional City",
+                        "name": "additional_city",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5c48fea09518e",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": "",
+                        "max": "",
+                        "layout": "table",
+                        "button_label": "Add Row",
+                        "sub_fields": [
+                            {
+                                "key": "field_5c48ff5b0281b",
+                                "label": "City",
+                                "name": "trip_aditional_city",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5c48ffb00281c",
+                                "label": "Trip City Description",
+                                "name": "trip_additional_city_description",
+                                "type": "textarea",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": "",
+                                "new_lines": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5c48ffd80281d",
+                                "label": "Trip City URL",
+                                "name": "trip_additional_city_url",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5c48ec60a0018",
+                        "label": "Include Offer",
+                        "name": "trip_include_offer",
+                        "type": "true_false",
+                        "instructions": "Select to include trip price and URL",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 1
+                    },
+                    {
+                        "key": "field_5c48ad8309d02",
+                        "label": "Trip Price",
+                        "name": "trip_price",
+                        "type": "text",
+                        "instructions": "No $ Signs",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5c48ec60a0018",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "45.00",
+                        "placeholder": "45.00",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c48adab09d03",
+                        "label": "Trip URL",
+                        "name": "trip_url",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5c48ec60a0018",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5c4a1827fb8a4",
+                "label": "Provider",
+                "name": "provider",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": "",
+                "max": "",
+                "layout": "block",
+                "button_label": "Add Provider",
+                "sub_fields": [
+                    {
+                        "key": "field_5c4a18a0fb8a5",
+                        "label": "Name",
+                        "name": "provider_name",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Colorado Adventure Center",
+                        "placeholder": "Colorado Adventure Center",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a230168dc5",
+                        "label": "Provider URL",
+                        "name": "provider_url",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "https:\/\/www.raftingcolorado.com",
+                        "placeholder": "https:\/\/www.raftingcolorado.com",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a1a0bfb8a9",
+                        "label": "Address",
+                        "name": "provider_address",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 25,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "2697 Stanley Rd",
+                        "placeholder": "2697 Stanley Rd",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a18c1fb8a6",
+                        "label": "Locality",
+                        "name": "provider_locality",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 20,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Idaho Springs",
+                        "placeholder": "Idaho Springs",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a18fffb8a7",
+                        "label": "Region",
+                        "name": "provider_region",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 10,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "CO",
+                        "placeholder": "CO",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a1942fb8a8",
+                        "label": "Postal Code",
+                        "name": "provider_postal_code",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 10,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 80452,
+                        "placeholder": 80452,
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a22ad68dc4",
+                        "label": "Hours",
+                        "name": "provider_hours",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 35,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Mo, Tu, We, Th, Fr, Sa, Su 08:00-18:00",
+                        "placeholder": "Mo, Tu, We, Th, Fr, Sa, Su 08:00-18:00",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a2a3ac148d",
+                        "label": "Telephone",
+                        "name": "provider_telephone",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 25,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "+1(877) 947-7238",
+                        "placeholder": "+1(877) 947-7238",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a2a7dc148e",
+                        "label": "Telephone Contact Type",
+                        "name": "provider_telephone_contact_type",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 25,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Sales",
+                        "placeholder": "Sales",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a2a26c148c",
+                        "label": "Price Range",
+                        "name": "provider_price_range",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 20,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "$$-$$$",
+                        "placeholder": "$, $$, $-$$$$",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a211768dc2",
+                        "label": "Review Count",
+                        "name": "provider_review_count",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 15,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 500,
+                        "placeholder": 500,
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a227768dc3",
+                        "label": "Average Rating",
+                        "name": "provider_average_rating",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 15,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 4,
+                        "placeholder": 4,
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5c4a232068dc6",
+                        "label": "Logo",
+                        "name": "provider_logo",
+                        "type": "image",
+                        "instructions": "The image must be in .jpg, .png, or. gif format.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": 111,
+                        "min_height": 111,
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5c4a236868dc7",
+                        "label": "Image",
+                        "name": "provider_image",
+                        "type": "image",
+                        "instructions": "Large landscape image",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": 1920,
+                        "max_height": 1080,
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-template\/trip.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
